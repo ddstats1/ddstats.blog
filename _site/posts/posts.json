@@ -1,0 +1,19 @@
+[
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to ddstats.blog",
+    "description": "Don't put the welcome here, put it in the index.html \"Home\" page file! Like jhelvy.com",
+    "author": [
+      {
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-10-03",
+    "categories": [],
+    "contents": "\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-10-13T04:50:06-04:00",
+    "input_file": {}
+  }
+]

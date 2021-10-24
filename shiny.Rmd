@@ -1,0 +1,11 @@
+---
+title: "Some R Shiny apps I built!"
+description: |
+  blah blah .....
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+

@@ -1,0 +1,43 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this blog",
+      "description": "Some additional details about the blog",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-10-23T14:51:26-04:00"
+    },
+    {
+      "path": "index.html",
+      "title": "ddstats.blog",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-10-23T14:51:26-04:00"
+    },
+    {
+      "path": "research.html",
+      "title": "Research Projects",
+      "description": "blah blah .....",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-10-23T14:51:26-04:00"
+    },
+    {
+      "path": "resume.html",
+      "title": "My Resume",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-10-23T14:51:26-04:00"
+    },
+    {
+      "path": "shiny.html",
+      "title": "Some R Shiny apps I built!",
+      "description": "blah blah .....",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-10-23T14:51:27-04:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}
