@@ -1,11 +1,12 @@
 ---
 title: "Some R Shiny apps I built!"
-description: |
-  blah blah .....
+output: distill::distill_article
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
+# H1
 
+## H2
 
+### H3
+
+Body text...

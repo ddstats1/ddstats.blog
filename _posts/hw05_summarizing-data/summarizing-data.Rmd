@@ -1,0 +1,173 @@
+---
+title: "Homework 5"
+author: Daniel Dulaney
+date: 
+output: distill::distill_article
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+```
+
+```{r}
+library(tidyverse)
+library(here)
+library(ggeasy)
+```
+
+
+## 1.
+
+```{r}
+# read data in and convert 3 columns to type factor
+crabs <- 
+  read.table(here("hw05_summarizing-data", "crabs.txt"),
+           header = TRUE) %>% 
+  as_tibble() %>% 
+  mutate_at(vars(color, spine, y), as.factor)
+
+# relabel the 3 factors
+levels(crabs$color) <- c("light", "medium", "dark", "darker")
+levels(crabs$spine) <- c("Both Good", "One Worn/Broken", "Both Worn/Broken")
+levels(crabs$y) <- c("No Sattelite", "At least 1 Sattelite")
+
+print(crabs)
+```
+
+
+## 2.
+
+```{r}
+table(crabs$satell, crabs$spine)
+```
+
+The number in the very top-left tells us that for female horshoe crabs with no
+sattelite males, 11 (out of 62) have two good spines. The number in the very
+bottom-right tells us that the only crab with 15 sattelites has two broken
+or worn spines.
+
+
+## 3.
+
+```{r}
+tab <- table(crabs$color, crabs$spine, crabs$satell)
+tab
+```
+
+```{r}
+# since "darker" is the 3rd level
+tab[3, , ]
+```
+
+The number in the very top-left tells us that there are no dark-colored crabs
+with 0 sattelite males and spines that are both good.
+
+
+## 4.
+
+```{r}
+crabs %>% 
+  ggplot(aes(color, fill = as.factor(y))) +
+  geom_bar(position = "dodge") +
+  coord_flip() +
+  ggeasy::easy_remove_legend_title() +
+  labs(x = "Female Crab Color")
+```
+
+```{r}
+crabs %>% 
+  ggplot(aes(spine, fill = as.factor(y))) +
+  geom_bar(position = "dodge") +
+  coord_flip() +
+  ggeasy::easy_remove_legend_title() +
+  labs(x = "Female Crab Spine Condition")
+```
+
+```{r}
+crabs %>% 
+  ggplot(aes(spine, fill = as.factor(color))) +
+  geom_bar(position = "dodge") +
+  coord_flip() +
+  ggeasy::easy_add_legend_title("Female Crab Color") +
+  labs(x = "Female Crab Spine Condition")
+```
+
+Male crabs seem to like females who are medium-colored, as well as those with
+two good spines.
+
+
+## 5.
+
+```{r}
+crabs %>% 
+  mutate(spine = str_c("spine: ", spine),
+         spine = fct_relevel(spine, c("spine: Both Good",
+                                      "spine: One Worn/Broken",
+                                      "spine: Both Worn/Broken"))) %>% 
+  ggplot(aes(color, fill = as.factor(y))) +
+  geom_bar(position = "dodge") +
+  facet_wrap(~spine) +
+  ggeasy::easy_rotate_x_labels(angle = 45) +
+  ggeasy::easy_remove_legend_title() +
+  labs(x = "Female Crab Spine Condition")
+```
+
+There are relatively more sattelite-less female crabs among those with one or 
+more broken spines.
+
+
+## 6.
+
+```{r}
+crabs %>% 
+  group_by(color, y) %>% 
+  summarise(Avg = mean(weight),
+            Sd = sd(weight),
+            Median = median(weight),
+            IQR = IQR(weight))
+```
+
+The first row gives us the average, standard deviation, median, and 
+(3rd quartile - 1st quartile) weight for all light-colored crabs with no sattelite males.
+
+
+## 7.
+
+```{r}
+crabs %>% 
+  ggplot(aes(y, weight)) +
+  geom_boxplot() +
+  geom_point(aes(color = y), position = "jitter") +
+  labs(title = "Boxplot for Weight")
+```
+
+```{r}
+crabs %>% 
+  ggplot(aes(y, width)) +
+  geom_boxplot() +
+  geom_point(aes(color = y), position = "jitter") +
+  labs(title = "Boxplot for Width")
+```
+
+Female crabs with greater weight and width usually have more sattelites.
+
+
+## 8.
+
+```{r}
+cor(crabs$weight, crabs$width)
+```
+
+The correlation between weight and width is r = 0.89
+
+```{r}
+crabs %>% 
+  ggplot(aes(weight, width)) +
+  geom_point(aes(color = color, shape = y)) +
+  geom_smooth(method = "lm") +
+  labs(title = "Weight vs Width")
+```
+
+Weight and width are extremely highly correlated in the positive direction.

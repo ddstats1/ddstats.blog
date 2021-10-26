@@ -7,7 +7,7 @@ output_dir: "_site"
 navbar:
   right:
     - text: "Blog"
-      href: index.html
+      href: blog.html
     - text: "About"
       href: about.html
     - text: "R Shiny"

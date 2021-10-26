@@ -1,6 +1,7 @@
 ---
 title: "ddstats.blog"
+base_url: https://www.ddstats.blog
 site: distill::distill_website
-listing: posts
 ---
 
+Welcome to my site!
