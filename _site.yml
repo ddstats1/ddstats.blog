@@ -15,7 +15,7 @@ navbar:
     - text: "Projects"
       href: projects.html
     - text: "Resume"
-      href: resume.html
+      href: content/resume-data-sci.pdf
     - icon: fab fa-github
       href: https://github.com/ddstats1
     - icon: fa fa-linkedin
