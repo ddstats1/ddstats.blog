@@ -6,4 +6,3 @@ title: "My Resume"
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-

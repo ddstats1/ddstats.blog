@@ -1,0 +1,16 @@
+---
+title: "Projectsssss"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Markov Lineup Tool
+
+[Poster, Undergrad Research Symposium](https://github.com/ddstats1/markov-lineup-simulator/blob/main/dulaney-snook-osborne.pdf)
+
+[Code](https://github.com/ddstats1/markov-lineup-simulator)
+
+RShiny App

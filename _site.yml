@@ -12,6 +12,8 @@ navbar:
       href: about.html
     - text: "R Shiny"
       href: shiny.html
+    - text: "Projects"
+      href: projects.html
     - text: "Resume"
       href: resume.html
     - icon: fab fa-github
