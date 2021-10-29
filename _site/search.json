@@ -6,42 +6,35 @@
       "description": "Some additional details about the blog",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-10-29T01:01:34-04:00"
+      "last_modified": "2021-10-29T17:40:05-04:00"
     },
     {
       "path": "blog.html",
       "title": "Blog",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-10-29T01:01:34-04:00"
+      "last_modified": "2021-10-29T17:40:05-04:00"
     },
     {
       "path": "index.html",
       "title": "ddstats.blog",
       "author": [],
       "contents": "\nWelcome to my site!\n\n\n\n",
-      "last_modified": "2021-10-29T01:01:34-04:00"
+      "last_modified": "2021-10-29T17:40:05-04:00"
     },
     {
       "path": "projects.html",
       "title": "Projectsssss",
       "author": [],
       "contents": "\nMarkov Lineup Tool\nPoster, Undergrad Research Symposium\nCode\nRShiny App\n\n\n\n",
-      "last_modified": "2021-10-29T17:28:24-04:00"
-    },
-    {
-      "path": "resume.html",
-      "title": "My Resume",
-      "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2021-10-29T01:01:35-04:00"
+      "last_modified": "2021-10-29T17:40:05-04:00"
     },
     {
       "path": "shiny.html",
       "title": "Some R Shiny apps I built!",
       "author": [],
       "contents": "\nH1\nH2\nH3\nBody text…\n\n\n\n",
-      "last_modified": "2021-10-29T01:01:35-04:00"
+      "last_modified": "2021-10-29T17:40:06-04:00"
     }
   ],
   "collections": ["posts/posts.json"]
