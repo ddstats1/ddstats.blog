@@ -1,1 +1,1 @@
-# ddstats.blog
+This repo contains the contents of my personal website, [ddstats.blog](https://ddstats.blog). It's built using the {distill} R package, and with the help of ... (add links to jhelvy, the original tweet, and Thomas Mock's post
