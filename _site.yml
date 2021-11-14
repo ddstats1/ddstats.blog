@@ -13,7 +13,7 @@ navbar:
     - text: "Projects"
       href: projects.html
     - text: "R Shiny"
-      href: shiny.html
+      href: https://ddstats.app
     - text: "Resume"
       href: content/resume-data-sci.pdf
     - icon: fab fa-github
