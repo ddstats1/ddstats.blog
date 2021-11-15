@@ -3,38 +3,37 @@
     {
       "path": "about.html",
       "title": "About this blog",
-      "description": "Some additional details about the blog",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2021-11-13T21:37:42-05:00"
+      "contents": "\nWelcome to my personal website!\nI’m an active member with Pittsburgh DSA, as well as an avid reader. – . and the like. Some of the books I’ve read are on my Goodreads page – my favorite topics/genres include history, politics, and sci-fi\n\n\n\n",
+      "last_modified": "2021-11-14T23:01:45-05:00"
     },
     {
       "path": "blog.html",
       "title": "Blog",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-11-13T21:37:42-05:00"
+      "last_modified": "2021-11-14T23:01:45-05:00"
     },
     {
       "path": "index.html",
       "title": "ddstats.blog",
       "author": [],
       "contents": "\nWelcome to my site!\n\n\n\n",
-      "last_modified": "2021-11-13T21:37:42-05:00"
+      "last_modified": "2021-11-14T23:01:46-05:00"
     },
     {
       "path": "projects.html",
       "title": "Projectsssss",
       "author": [],
       "contents": "\nMarkov Lineup Tool\nPoster, Undergrad Research Symposium\nCode\nRShiny App\n\n\n\n",
-      "last_modified": "2021-11-13T21:37:42-05:00"
+      "last_modified": "2021-11-14T23:01:46-05:00"
     },
     {
       "path": "shiny.html",
       "title": "Some R Shiny apps I built!",
       "author": [],
       "contents": "\nH1\nH2\nH3\nBody text…\n\n\n\n",
-      "last_modified": "2021-11-13T21:37:43-05:00"
+      "last_modified": "2021-11-14T23:01:46-05:00"
     }
   ],
   "collections": ["posts/posts.json"]

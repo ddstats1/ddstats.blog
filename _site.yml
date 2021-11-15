@@ -21,4 +21,3 @@ navbar:
     - icon: fa fa-linkedin
       href: https://www.linkedin.com/in/daniel-dulaney-48b5a1117/
 output: distill::distill_article
-

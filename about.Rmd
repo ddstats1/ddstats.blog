@@ -1,9 +1,13 @@
 ---
 title: "About this blog"
-description: |
-  Some additional details about the blog
+output: distill::distill_article
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+Welcome to my personal website!
+
+I'm an active member with Pittsburgh DSA, as well as an avid reader. -- . and the like. Some of the books I've read are on [my Goodreads page](https://www.goodreads.com/review/list/99495477-daniel-dulaney?ref=nav_mybooks&shelf=read) -- my favorite topics/genres include history, politics, and sci-fi
+
